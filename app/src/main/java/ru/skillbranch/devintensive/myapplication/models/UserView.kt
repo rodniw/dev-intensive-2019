@@ -1,17 +1,22 @@
 package ru.skillbranch.devintensive.myapplication.models
 
-import java.util.*
+class UserView(
+    val id: String,
+    val fullName: String,
+    val nickName: String,
+    var avatar: String? = null,
+    var status: String = "offline",
+    val initials: String?
+) {
 
-class UserView(val id : String,
-               var firstName : String?,
-               var lastName : String?,
-               var avatar : String?,
-               var rating : Int = 0,
-               var respect : Int = 0,
-               var lastVisit : Date? = Date(),
-               var isOnline : Boolean = false) {
-
-    companion object Factory {
-
+    fun printMe() {
+        println("""
+            id: $id,
+            fullName: $fullName,
+            nickName: $nickName,
+            avatar: $avatar,
+            status: $status,
+            initials: $initials
+        """.trimIndent())
     }
 }
