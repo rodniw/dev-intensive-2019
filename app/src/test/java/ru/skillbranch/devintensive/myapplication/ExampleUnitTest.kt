@@ -3,7 +3,6 @@ package ru.skillbranch.devintensive.myapplication
 import org.junit.Test
 
 import org.junit.Assert.*
-import ru.skillbranch.devintensive.mesintensive.models.User
 
 /**
  * Example local unit test, which will execute on the development machine (host).
