@@ -27,7 +27,6 @@ class Bender(var status: Status = Status.NORMAL, var question: Question = Questi
             question = question.nextQuestion()
             "Отлично - ты справился\n${question.question}" to status.color
         } else {
-            // TODO - при вопросе IDLE не надо накручивать неправильные ответы
             wrongAnswerCount++
             if (wrongAnswerCount < 3) {
                 status = status.nextStatus()
